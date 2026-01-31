@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryFy Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #4A90D9, #6BB5E0);
+            color: white;
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+        header h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: 8px; }
+        header p { font-size: 1.1rem; opacity: 0.9; }
+        .container { max-width: 720px; margin: 0 auto; padding: 40px 20px 60px; }
+        .section { background: white; border-radius: 16px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        .section h2 { font-size: 1.4rem; margin-bottom: 16px; color: #1d1d1f; }
+        .section p, .section li { font-size: 1rem; color: #424245; }
+        .section ul { padding-left: 20px; }
+        .section li { margin-bottom: 10px; }
+        .contact-box {
+            background: #f0f4ff;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 16px;
+        }
+        .contact-box a {
+            color: #4A90D9;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .contact-box a:hover { text-decoration: underline; }
+        details { margin-bottom: 12px; }
+        details summary {
+            font-weight: 600;
+            cursor: pointer;
+            padding: 12px 0;
+            border-bottom: 1px solid #e8e8e8;
+            list-style: none;
+        }
+        details summary::before { content: "+ "; color: #4A90D9; font-weight: 700; }
+        details[open] summary::before { content: "- "; }
+        details p { padding: 12px 0 4px; color: #424245; }
+        .languages { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+        .lang-tag {
+            background: #e8f0fe;
+            color: #4A90D9;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        footer { text-align: center; padding: 20px; color: #86868b; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MemoryFy Support</h1>
+        <p>AI Memory Aid & Caregiver Hub</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Contact Us</h2>
+            <p>Have a question, issue, or suggestion? We're here to help.</p>
+            <div class="contact-box">
+                <a href="mailto:memoryfy.support@gmail.com">memoryfy.support@gmail.com</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>What is MemoryFy?</summary>
+                <p>MemoryFy is an AI-powered app designed to help seniors manage daily life with confidence. It combines smart reminders, a memory vault, voice commands, brain games, and a caregiver dashboard — all built with accessibility in mind.</p>
+            </details>
+
+            <details>
+                <summary>Who is MemoryFy for?</summary>
+                <p>MemoryFy is designed for elderly users facing memory challenges and their caregivers — whether family members, friends, or professional care providers.</p>
+            </details>
+
+            <details>
+                <summary>How do I create a reminder?</summary>
+                <p>You can create reminders by tapping the "+" button on the Reminders tab, or simply use a voice command like "Remind me to take my pills at 8am." Caregivers can also create reminders remotely from their dashboard.</p>
+            </details>
+
+            <details>
+                <summary>How does the Memory Vault work?</summary>
+                <p>The Memory Vault lets you store information about personal items, important locations, people, and documents. You can add photos, voice notes, and GPS locations to each memory for easy recall later.</p>
+            </details>
+
+            <details>
+                <summary>How do I invite a caregiver?</summary>
+                <p>Go to Settings and tap "Invite Caregiver." You can share an invitation code or let them scan a QR code. Once accepted, you control exactly what permissions each caregiver has.</p>
+            </details>
+
+            <details>
+                <summary>How do I use voice commands?</summary>
+                <p>Tap the microphone button and speak naturally. You can say things like "Remind me to call the doctor tomorrow morning," "What's next on my list?" or "I took my medication." The app understands natural language and responds with voice feedback.</p>
+            </details>
+
+            <details>
+                <summary>What brain games are available?</summary>
+                <p>MemoryFy includes 8 cognitive exercises: Card Matching, Word Recall, Pattern Sequence, Number Sequence, Photo Recognition, Daily Trivia, Spaced Review, and Memory Links. All games are non-competitive and focused on encouragement.</p>
+            </details>
+
+            <details>
+                <summary>Is my data secure?</summary>
+                <p>Yes. All data is stored securely in the cloud with encryption. Elder users have full control over caregiver access permissions. We do not share data with third parties.</p>
+            </details>
+
+            <details>
+                <summary>How do I change the app language?</summary>
+                <p>Go to Settings and select your preferred language. The app will switch immediately — including all voice feedback.</p>
+            </details>
+        </section>
+
+        <section class="section">
+            <h2>Supported Languages</h2>
+            <p>MemoryFy is available in:</p>
+            <div class="languages">
+                <span class="lang-tag">English</span>
+                <span class="lang-tag">Espa&ntilde;ol</span>
+                <span class="lang-tag">Fran&ccedil;ais</span>
+                <span class="lang-tag">Deutsch</span>
+                <span class="lang-tag">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>App Information</h2>
+            <ul>
+                <li><strong>Developer:</strong> MemoryFy Inc</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Category:</strong> Health & Fitness</li>
+                <li><strong>Requires:</strong> iOS 16.0 or later</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 MemoryFy Inc. All rights reserved.
+    </footer>
+</body>
+</html>
