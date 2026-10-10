@@ -95,7 +95,8 @@
             <h3>Photos and Voice Notes</h3>
             <ul>
                 <li><strong>Photos:</strong> Captured via camera or selected from your photo library when creating memories, setting a profile picture, or verifying medication completion.</li>
-                <li><strong>Voice notes:</strong> Audio recordings you create for memories. Voice data for commands is processed on-device and is not stored permanently.</li>
+                <li><strong>Voice notes:</strong> Audio recordings you create for memories.</li>
+                <li><strong>Voice commands:</strong> Speech is converted to text on your device (Apple Speech). The text of a voice command is sent to our server to work out what you asked (for example, to create a reminder); it is interpreted by an AI model and is not stored.</li>
             </ul>
 
             <h3>Usage and Activity Data</h3>
@@ -103,7 +104,7 @@
                 <li>Reminder creation, completion, and missed events</li>
                 <li>Memory access patterns</li>
                 <li>Brain game scores and completion data</li>
-                <li>Voice command usage (processed on-device)</li>
+                <li>Voice command usage (the action taken, not what was said)</li>
             </ul>
             <p>This data is used for smart suggestions and pattern recognition to improve your experience. Activity data older than 90 days is automatically deleted.</p>
         </div>
@@ -172,7 +173,7 @@
             <ul>
                 <li>All data is stored securely using Google Firebase with encryption in transit and at rest.</li>
                 <li>Photos and voice notes are stored in Firebase Storage with user-specific access controls.</li>
-                <li>Voice command processing (speech recognition) is performed on-device using Apple Speech framework and on-device AI models. Voice command audio is not stored or transmitted.</li>
+                <li>Speech recognition for voice commands is performed on-device using the Apple Speech framework; audio is never transmitted. Only the recognised text of a command is sent to our server, over an encrypted connection, to be interpreted; it is not stored or used for any other purpose.</li>
                 <li>Caregiver access is enforced through Firebase security rules tied to established care relationships.</li>
             </ul>
         </div>
